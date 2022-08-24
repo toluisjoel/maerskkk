@@ -25,16 +25,12 @@
     color: #141414;
 }
 
-.card:hover {
-    /* background-color: yellow; */
-}
-
 .bg-card-tolu {
-    width: 400px; 
+    width: 400px;
     height: 300px;
 }
 
-.card-bg-img{
+.card-bg-img {
     background-position: center;
     background-size: cover;
 }

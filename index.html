@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="./script.js"></script>
 
@@ -15,12 +14,13 @@
 <body>
 
     <!-----------------------------------------------
-                    HERO SECTION
+                    HEADER
      ----------------------------------------------->
 
-    <section class="hero has-bg-img">
-        <nav class="navbar navbar-expand-xl">
-            <div class="container-fluid">
+    <header>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-xl position-fixed bg-light w-100 p-4" id="navbar" style="z-index: 1000;">
+            <div class="container-md">
                 <a class="navbar-brand" href="#"><img src="./assets/icons/maeu.svg" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false"
@@ -57,36 +57,111 @@
                             <a class="nav-link dropdown-toggle" href="#" id="languages" data-bs-toggle="dropdown"
                                 aria-expanded="true">EN</a>
                             <!-- <ul class="dropdown-menu" aria-labelledby="languages">
-                                <li><a class="dropdown-item" href="#">New Booking</a></li>
-                                <li><a class="dropdown-item" href="#">Duplicate Booking</a></li>
-                            </ul> -->
+                                        <li><a class="dropdown-item" href="#">New Booking</a></li>
+                                        <li><a class="dropdown-item" href="#">Duplicate Booking</a></li>
+                                    </ul> -->
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="hero-bg-img w-100 h-100">
-            <img src="./assets/images/upside-homepage-hero_1920x900_darker.webp" alt="" class="w-100 img-fluid">
+    </header>
+
+    <!-----------------------------------------------
+                    HERO SECTION
+     ----------------------------------------------->
+
+    <section id="hero">
+        <div class="row align-items-center p-4"
+            style="height:700px; background: no-repeat url(./assets/images/hero-image.jpeg);background-size:cover;">
+
+            <div class="col-8 row text-white">
+                <h1 class="display-5">Logistics made easy</h1>
+                <span class="col-1 d-lg-block d-md-none d-sm-none"></span>
+                <span class="col-8 display-5">through digital solutions</span>
+
+                <div class="mt-4">
+                    <p class="col-8 " style="font-size: 18px;">
+                        We make it easy to manage your shipments and logistics online. From finding a price and making
+                        bookings to submitting documents and tracking cargo.
+                    </p>
+                    <p>Register and you will soon be able to manage your logistics online.</p>
+                </div>
+
+                <div class="mt-3">
+                    <button class="btn btn-light me-2">Register now</button>
+                    <button class="btn btn-outline-light">Digital solutions</button>
+                </div>
+            </div>
+
+            <div class="col-4 bg-light rounded-3 p-4">
+                <nav class="nav tracking-nav">
+                    <a class="nav-link text-dark active border-0 border-bottom-2 ps-0" href="#">Tracking</a>
+                    <a class="nav-link text-dark" href="#">Schedules</a>
+                    <a class="nav-link text-dark" href="#">Local offices</a>
+                </nav>
+
+                <div>
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-0 ps-0" id="addon-wrapping">
+                            <p class="border-0 border-bottom-2">loc icon</p>
+                        </span>
+
+                        <input type="text" class="form-control border-0 border-bottom border-secondary"
+                            placeholder="Enter a tracking ID" aria-label="Username" aria-describedby="addon-wrapping" />
+                    </div>
+
+                    <button class="btn btn-primary mt-3 py-2">Track</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-md">
+            <!-- stand-alone article -->
+            <article class="row d-flex align-items-center py-5">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h1 class="mb-3">The smallest cargo can have the biggest impact on your supply chain</h1>
+                    <p class="w-100 mb-4">
+                        There is an urgent need to build resiliency and agility into supply chains and this is what is
+                        driving demand for the flexibility that the <strong>Less than Container Load logistics
+                            service</strong> offers.
+                    </p>
+
+                    <div class="col-lg-3 col-sm-12">
+                        <button class="btn btn-outline-secondary w-100">Learn more</button>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6  col-sm-12 px-5">
+                    <img src="./assets/images/man-in-truck.jpeg" alt="" class="img-fluid w-100">
+                </div>
+            </article>
         </div>
     </section>
+
 
     <!-----------------------------------------------
                     LOGISTICS SOLUTIONS
      ----------------------------------------------->
 
-    <section class="container">
+    <section class="container-md">
         <div class="section-top py-5">
-            <!-- px-4  w-75 -->
-            <h2 class="h1 heading mb-3 font-weight-light">Logistics Solutions</h2>
-            <p class="w-75">
-                From the farm to your refrigerator, or the factory to your wardrobe, A.P. Moller - Maersk is
-                developing solutions that meet customer needs from one end of the supply chain to the other.
-            </p>
-            <button class="btn btn-outline-secondary rounded-1">See all solutions</button>
+            <div class="row">
+                <h2 class="h1 heading mb-3 font-weight-light">Logistics Solutions</h2>
+                <p class="col-lg-8 col-sm-12">
+                    From the farm to your refrigerator, or the factory to your wardrobe, A.P. Moller - Maersk is
+                    developing solutions that meet customer needs from one end of the supply chain to the other.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-sm-12">
+                    <button class="btn btn-outline-secondary rounded-1 w-100">See all solutions</button>
+                </div>
+            </div>
         </div>
 
-        <!--CARDS card-deck-->
-        <div class="row mb-4 row-cols-4">
+        <!-- solutions (card group) -->
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4">
             <div class="col">
                 <div class="card h-100 hover-overlay">
                     <img src="./assets/images/transportation-services_illustration.svg" alt="" class="card-img-top">
@@ -107,7 +182,7 @@
                         <h5 class="card-title heading">Supply Chain and Logistics</h5>
                         <p class="card-text">
                             We focus on solving your supply chain needs from end to end, taking the
-                            complexity out of container shipping for you.
+                            complexity out of container-md shipping for you.
                         </p>
                     </div>
                 </div>
@@ -144,134 +219,548 @@
 
     </section>
 
+
     <!-----------------------------------------------
                     LATEST INSIGHTS
      ----------------------------------------------->
 
-    <section class="container p-4">
+    <section class="container-md p-4">
         <h2 class="h1 heading mb-3">Latest insights</h2>
-        <div class="categories row d-flex justify-content-between">
-            <p class="col-8">
+        <div class="categories row">
+            <p class="col-lg-8 col-sm-12">
                 Access the latest articles, trends and research to guide your strategy and keep you updated on
                 what's new in the supply chain world.
             </p>
-            <div class="col-2">
-                <select class="form-select d-flex">
+            <p class="col-lg-1 d-sm-none"></p>
+            <div class="col-lg-3 col-sm-12 p-3">
+                <select class="form-select w-100">
                     <option>All categories</option>
                 </select>
             </div>
         </div>
 
         <!-- CARDS -->
-        <div class="row">
-            <div class="col-6">
-                <div class="card has-bg-img">
-                    <img src="./assets/images/the-direct-to-consumer-model-trend-alert-banner_1024x576.jpeg" alt=""
-                        class="card-img-top">
+        <div class="row g-4">
+            <div class="col-lg-6 col-md-12">
+                <div class="card h-100">
+                    <div class="card-img-top card-bg-img"
+                        style="height:500px;background: no-repeat url(./assets/images/how-to-achieve-a-truly-integrated-logistics-banner-v2_1024x576.jpeg);">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title heading">Transportation Services</h5>
+                        <h5 class="card-title heading">Transportation Services lk</h5>
                         <p class="card-text">
-                            Learn more about our shipping services from 300 ports around the world.
-                            Maersk can connect your business globally and we make shipping simple.
+                            hello
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-6">
-                <div class="row">
-                    <div class="col-12">
+            <div class="col-lg-6 col-md-12">
+                <div class="card">
+                    <div class="card-img-top card-bg-img"
+                        style="background-image: url(./assets/images/change-is-the-new-constant_1024x576.jpeg);">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title h6">Resilience tueh</h5>
+                        <p class="card-text">Change is the new constant</p>
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                    <div class="col-lg-6 col-md-6">
                         <div class="card">
-                            <img src="./assets/images/horizon-cold-chain-logistics_1024x576.jpeg" alt=""
-                                class="card-img-top">
+                            <div class="card-img-top card-bg-img"
+                                style="background-image: url(./assets/images/bottle-water.jpeg);">
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title h6">Digitalistaion</h5>
-                                <p class="card-text">What’s on the horizon for cold chain logistics.</p>
+                                <h5 class="card-title h6">Resilience</h5>
+                                <p class="card-text">Change is the new constant</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="./assets/images/transportation-services_illustration.svg" alt=""
-                                class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title heading">Transportation Services</h5>
-                                <p class="card-text">
-                                    Learn more about our shipping services from 300 ports around the world.
-                                    Maersk can connect your business globally and we make shipping simple.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="./assets/images/transportation-services_illustration.svg" alt=""
-                                class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title heading">Transportation Services</h5>
-                                <p class="card-text">
-                                    Learn more about our shipping services from 300 ports around the world.
-                                    Maersk can connect your business globally and we make shipping simple.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-6">
-                <div class="card">
-                    <img src="./assets/images/transportation-services_illustration.svg" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title heading">Transportation Services</h5>
-                        <p class="card-text">
-                            Learn more about our shipping services from 300 ports around the world.
-                            Maersk can connect your business globally and we make shipping simple.
-                        </p>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-img-top card-bg-img"
+                                style="background-image: url(./assets/images/intelligent-supply-chains.webp);">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title h6">Resilience</h5>
+                                <p class="card-text">Change is the new constant</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card">
-                    <img src="./assets/images/transportation-services_illustration.svg" alt="" class="card-img-top">
+                <div class="card h-100">
+                    <div class="card-img-top card-bg-img"
+                        style="background-image: url(./assets/images/intelligent-supply-chains.webp)">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title heading">Transportation Services</h5>
+                        <h5 class="card-title heading">Sustainability</h5>
                         <p class="card-text">
-                            Learn more about our shipping services from 300 ports around the world.
-                            Maersk can connect your business globally and we make shipping simple.
+                            hello
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card">
-                    <img src="./assets/images/transportation-services_illustration.svg" alt="" class="card-img-top">
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-img-top card-bg-img"
+                        style="background-image: url(./assets/images/fragmentation-synchronicity_1024x576.jpeg)">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title heading">Transportation Services</h5>
+                        <h5 class="card-title heading">Sustainability bola</h5>
                         <p class="card-text">
-                            Learn more about our shipping services from 300 ports around the world.
-                            Maersk can connect your business globally and we make shipping simple.
+                            hello
                         </p>
                     </div>
                 </div>
             </div>
 
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-img-top card-bg-img"
+                        style="background-image: url(./assets/images/fragmentation-synchronicity_1024x576.jpeg)">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title heading">Sustainability bola</h5>
+                        <p class="card-text">
+                            hello
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="view-all-btn text-center">
+        <div class="view-all-btn text-center mt-4">
             <button class="btn btn-outline-secondary rounded-1">View All</button>
         </div>
     </section>
+
 
     <!-----------------------------------------------
                 LATEST NEWS
     ----------------------------------------------->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
+    <section class="container-md p-4">
+        <h2 class="h1 heading mb-3">Latest News</h2>
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <button class="btn border">See all news</button>
+            </div>
+            <div class="col-lg-3 col-sm-12 p-3">
+                <select class="form-select border-0 border-bottom-3 w-100">
+                    <option>All regions</option>
+                    <option>Africa</option>
+                    <option>North America</option>
+                    <option>Asia Pacific</option>
+                    <option>Europe</option>
+                    <option>West Central Asia</option>
+                </select>
+            </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1">
+                </button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2">
+                </button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3">
+                </button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4">
+                        <div class="col">
+                            <div class="card h-100 hover-overlay">
+                                <img src="./assets/images/transportation-services_illustration.svg" alt=""
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title heading">Transportation Services</h5>
+                                    <p class="card-text">
+                                        Learn more about our shipping services from 300 ports around the world.
+                                        Maersk can connect your business globally and we make shipping simple.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./assets/images/supply-chain-logistics_illustration.svg" alt=""
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title heading">Supply Chain and Logistics</h5>
+                                    <p class="card-text">
+                                        We focus on solving your supply chain needs from end to end, taking the
+                                        complexity out of container-md shipping for you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./assets/images/financial-services_illustration.svg" alt=""
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title heading">Financial Services</h5>
+                                    <p class="card-text">
+                                        As experts in global integrated logistics, we provide strong financial and
+                                        compensation solutions to meet your end to end supply chain needs.
+                                    </p>
+                                </div>
+                            </div>
+                            </diviv>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./assets/images/digital-solutions_illustration.svg" alt=""
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title heading">Digital Solutions</h5>
+                                    <p class="card-text">
+                                        Our tailored online services take the complexity out of shipping by letting you
+                                        instantly book, manage and track shipments, submit Verified Gross Mass
+                                        information
+                                        and much more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4">
+                        <div class="col">
+                            <div class="card h-100 hover-overlay">
+                                <img src="./assets/images/transportation-services_illustration.svg" alt=""
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title heading">Transportation Services</h5>
+                                    <p class="card-text">
+                                        Learn more about our shipping services from 300 ports around the world.
+                                        Maersk can connect your business globally and we make shipping simple.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./assets/images/supply-chain-logistics_illustration.svg" alt=""
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title heading">Supply Chain and Logistics</h5>
+                                    <p class="card-text">
+                                        We focus on solving your supply chain needs from end to end, taking the
+                                        complexity out of container-md shipping for you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./assets/images/financial-services_illustration.svg" alt=""
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title heading">Financial Services</h5>
+                                    <p class="card-text">
+                                        As experts in global integrated logistics, we provide strong financial and
+                                        compensation solutions to meet your end to end supply chain needs.
+                                    </p>
+                                </div>
+                            </div>
+                            </diviv>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./assets/images/digital-solutions_illustration.svg" alt=""
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title heading">Digital Solutions</h5>
+                                    <p class="card-text">
+                                        Our tailored online services take the complexity out of shipping by letting you
+                                        instantly book, manage and track shipments, submit Verified Gross Mass
+                                        information
+                                        and much more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4">
+                        <div class="col">
+                            <div class="card h-100 hover-overlay">
+                                <img src="./assets/images/transportation-services_illustration.svg" alt=""
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title heading">Transportation Services</h5>
+                                    <p class="card-text">
+                                        Learn more about our shipping services from 300 ports around the world.
+                                        Maersk can connect your business globally and we make shipping simple.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./assets/images/supply-chain-logistics_illustration.svg" alt=""
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title heading">Supply Chain and Logistics</h5>
+                                    <p class="card-text">
+                                        We focus on solving your supply chain needs from end to end, taking the
+                                        complexity out of container-md shipping for you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./assets/images/financial-services_illustration.svg" alt=""
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title heading">Financial Services</h5>
+                                    <p class="card-text">
+                                        As experts in global integrated logistics, we provide strong financial and
+                                        compensation solutions to meet your end to end supply chain needs.
+                                    </p>
+                                </div>
+                            </div>
+                            </diviv>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./assets/images/digital-solutions_illustration.svg" alt=""
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title heading">Digital Solutions</h5>
+                                    <p class="card-text">
+                                        Our tailored online services take the complexity out of shipping by letting you
+                                        instantly book, manage and track shipments, submit Verified Gross Mass
+                                        information
+                                        and much more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <!-- <span class="carousel-control-prev-icon  bg-primary" aria-hidden="true"></span> -->
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <!-- <p class="carousel-control-next-icon  bg-primary" aria-hidden="true"></p> -->
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+    <!-----------------------------------------------
+                PROXIMITY SECTION
+    ----------------------------------------------->
+
+    <section>
+        <div class="container-md p-5">
+
+            <!-- stand-alone article -->
+            <article class="row d-flex align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h1 class="mb-3">Turn proximity into opportunity</h1>
+                    <p class="w-100 mb-4">
+                        Asia-Pacific has historically been a strong manufacturing hub, and is also now blossoming into a
+                        thriving marketplace for both global and local brands.
+                    </p>
+                    <p class="w-100">
+                        Learn how you can power your growth ambitions in sporting goods markets in Asia-Pacific and
+                        beyond.
+                    </p>
+                    <button class="btn btn-outline-secondary">Access to our e-book</button>
+                </div>
+                <div class="col-lg-6 col-md-6  col-sm-12 px-5">
+                    <img src="./assets/images/manufacturing-sneakers.webp" alt="" class="img-fluid w-100">
+                </div>
+            </article>
+
+            <!-- parteners logo carousel -->
+            <div id="parteners-carousel" class="carousel slide p-5" data-bs-ride="true">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#parteners-carousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1">
+                    </button>
+
+                    <button type="button" data-bs-target="#parteners-carousel" data-bs-slide-to="1"
+                        aria-label="Slide 2">
+                    </button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-2 p-4">
+                                <img src="./assets/icons/apm-terminals_pos.svg" class="img-fluid" alt="">
+                            </div>
+
+                            <div class="col-2 p-4">
+                                <img src="./assets/icons/svitzer.svg" class="img-fluid" alt="">
+                            </div>
+
+                            <div class="col-2 p-4">
+                                <img src="./assets/icons/Twill-Logo_with_Endorsement_Full_Colour_LIGHT_RGB-01.svg"
+                                    class="img-fluid">
+                            </div>
+
+                            <div class="col-2 p-4">
+                                <img src="./assets/icons/SealandMaersk.svg" class="img-fluid">
+                            </div>
+
+                            <div class="col-2 p-4">
+                                <img src="./assets/icons/HS_logo_tagline_colour_4c_pos.svg" class="img-fluid">
+                            </div>
+
+                            <div class="col-2">
+                                <img src="./assets/icons/Alianca_Logo_RGB.svg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-2 p-4">
+                                <img src="./assets/icons/maersk-container-industry.svg" class="img-fluid">
+                            </div>
+
+                            <div class="col-2 p-4">
+                                <img src="./assets/icons/maersk-training.svg" class="img-fluid">
+                            </div>
+
+                            <div class="col-2 p-4">
+                                <img src="./assets/icons/maersk-supply-service.webp" class="img-fluid">
+                            </div>
+
+                            <div class="col-2 p-4">
+                                <img src="./assets/icons/maersk-h2s.webp" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#parteners-carousel"
+                    data-bs-slide="prev">
+                    <!-- <span class="carousel-control-prev-icon  bg-primary" aria-hidden="true"></span> -->
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#parteners-carousel"
+                    data-bs-slide="next">
+                    <!-- <p class="carousel-control-next-icon  bg-primary" aria-hidden="true"></p> -->
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-----------------------------------------------
+                FOOTER
+    ----------------------------------------------->
+
+    <hr>
+    <footer class="py-5">
+        <div class="container-md">
+            <div class="row">
+                <div class="col">
+                    <ul class="list-unstyled">
+                        <li class="my-2">About us</li>
+                        <li class="my-2">Careers</li>
+                        <li class="my-2">Insights</li>
+                        <li class="my-2">News and advisories</li>
+                        <li class="my-2">Maersk Growth</li>
+                        <li class="my-2">Sustainability</li>
+                        <li class="my-2">Whistleblower</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-unstyled">
+                        <li class="my-2">Contact us</li>
+                        <li class="my-2">Investors</li>
+                        <li class="my-2">Press</li>
+                        <li class="my-2">Procurement</li>
+                        <li class="my-2">Support</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-unstyled">
+                        <li class="my-2">Terms & conditions</li>
+                        <li class="my-2">Data Privacy Notification</li>
+                        <li class="my-2">Brand protection</li>
+                        <li class="my-2">Cookie policy</li>
+                        <li class="my-2">Cookie preferences</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-unstyled">
+                        <li class="my-2">Point to point services</li>
+                        <li class="my-2">Supply chain and logistics</li>
+                        <li class="my-2">Transportaion Services</li>
+                        <li class="my-2">Vessel schedules</li>
+                        <li class="my-2">Container-md sales</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-end justify-content-between">
+                <div>
+                    <img src="./assets/icons/maeu.svg" alt="">
+                    <p class="mb-0">© A.P. Moller - Maersk</p>
+                </div>
+                <ul class="list-unstyled list-inline mb-0">
+                    <li class="list-inline-item">Linkedin</li>
+                    <li class="list-inline-item">Facebook</li>
+                    <li class="list-inline-item">Twitter</li>
+                    <li class="list-inline-item">Instagram</li>
+                    <li class="list-inline-item">YouTube</li>
+                </ul>
+
+                <div class="d-flex flex-column download-stores">
+                    <img src="./assets/icons/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+                        style="width: 117px;">
+                    <img src="./assets/icons/google-play-badge-english.svg" class="mt-2">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
 </body>
 
 </html>

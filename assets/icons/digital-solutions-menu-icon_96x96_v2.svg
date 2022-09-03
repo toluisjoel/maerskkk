@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>digital-solutions-menu-icon_96x96_v2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="digital-solutions-menu-icon_96x96_v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon">
+            <rect id="Rectangle" x="0" y="0" width="96" height="96"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="58.84" y="68" width="2" height="2"></rect>
+            <polygon id="Path" fill="#00243D" fill-rule="nonzero" points="67 67 71 67 71 69 67 69"></polygon>
+            <path d="M76,40 L66,40 L66,26 C66,23.790861 64.209139,22 62,22 L20,22 C17.790861,22 16,23.790861 16,26 L16,50 C16,52.209139 17.790861,54 20,54 L40,54 L40,60 L32,60 L32,62 L50,62 L50,60 L42,60 L42,54 L54,54 C54.1944815,53.2344142 54.6039235,52.5404448 55.18,52 L20,52 C18.8954305,52 18,51.1045695 18,50 L18,48 L58,48 L58,50.94 L60,50.94 L60,44 C60,42.8954305 60.8954305,42 62,42 L76,42 C77.1045695,42 78,42.8954305 78,44 L78,70 C78,71.1045695 77.1045695,72 76,72 L65.28,72 C64.5993065,73.1824252 63.3628725,73.9363484 62,74 L76,74 C78.209139,74 80,72.209139 80,70 L80,44 C80,41.790861 78.209139,40 76,40 Z M64,40 L62,40 C59.790861,40 58,41.790861 58,44 L58,46 L18,46 L18,26 C18,24.8954305 18.8954305,24 20,24 L62,24 C63.1045695,24 64,24.8954305 64,26 L64,40 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="67" y="67" width="4" height="2"></rect>
+            <path d="M61.84,52.94 C62.9445695,52.94 63.84,53.8354305 63.84,54.94 L63.84,70 C63.84,71.1045695 62.9445695,72 61.84,72 L57.84,72 C56.7354305,72 55.84,71.1045695 55.84,70 L55.84,54.94 C55.84,53.8354305 56.7354305,52.94 57.84,52.94 L61.84,52.94 L61.84,52.94 Z M61.84,50.94 L57.84,50.94 C55.630861,50.94 53.84,52.730861 53.84,54.94 L53.84,70 C53.84,72.209139 55.630861,74 57.84,74 L61.84,74 C64.049139,74 65.84,72.209139 65.84,70 L65.84,54.94 C65.84,52.730861 64.049139,50.94 61.84,50.94 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

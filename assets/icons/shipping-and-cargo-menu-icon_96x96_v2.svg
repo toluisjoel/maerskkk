@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>shipping-and-cargo-menu-icon_96x96_v2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="shipping-and-cargo-menu-icon_96x96_v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon">
+            <rect id="Rectangle" x="0" y="0" width="96" height="96"></rect>
+            <path d="M68,72 L68,49 L78,49 C79.1045695,49 80,48.1045695 80,47 L80,24 C80,22.8954305 79.1045695,22 78,22 L30,22 C28.8954305,22 28,22.8954305 28,24 L28,47 L18,47 C16.8954305,47 16,47.8954305 16,49 L16,72 L16,72 L16,74 L68,74 L68,72 Z M66,72 L18,72 L18,49 L66,49 L66,72 Z M30,47 L30,24 L78,24 L78,47 L30,47 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="38" y="30" width="2" height="11"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="68" y="30" width="2" height="11"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="58" y="30" width="2" height="11"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="48" y="30" width="2" height="11"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="26" y="55" width="2" height="11"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="56" y="55" width="2" height="11"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="46" y="55" width="2" height="11"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="36" y="55" width="2" height="11"></rect>
+        </g>
+    </g>
+</svg>

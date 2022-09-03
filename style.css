@@ -15,22 +15,43 @@
     src: url(./assets/fonts/MaerskHeadline-Light.woff2);
 }
 
-* {
-    font-family: "MaerskText";
-    color: #545454;
+/*  */
+
+#navbar {
+    transition: 0.5s ease-in-out;
 }
 
-.heading {
-    font-family: "MaerskHeadline";
-    color: #141414;
+.card {
+    transition: all .2s ease-in-out;
 }
 
-.bg-card-tolu {
-    width: 400px;
-    height: 300px;
+.card:hover {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .03), 0 3px 14px 2px rgba(0, 0, 0, .03), 0 5px 5px -3px rgba(0, 0, 0, .04)
 }
 
 .card-bg-img {
-    background-position: center;
+    height: 200px;
     background-size: cover;
+    background-position: top;
+}
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #00243d !important;
+    border-radius: 50% !important;
+}
+
+.carousel-indicators {
+    align-items: center;
+}
+
+/* hero section */
+
+.tracking-nav a {
+    transition: .3s ease-in-out;
+}
+
+.tracking-nav a:hover {
+    border-bottom: 1px solid black;
 }

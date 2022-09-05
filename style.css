@@ -38,8 +38,12 @@
 .carousel-indicators button {
     width: 10px !important;
     height: 10px !important;
-    background-color: #00243d !important;
+    border: 1px solid black !important;
     border-radius: 50% !important;
+}
+
+.carousel-indicators button.active {
+    background-color: #00243d !important;
 }
 
 .carousel-indicators {
@@ -54,4 +58,11 @@
 
 .tracking-nav a:hover {
     border-bottom: 1px solid black;
+}
+
+.carousel-control-prev,
+.bi-arrow-left,
+.carousel-control-next {
+    opacity: 1 !important;
+    margin: 0px 30px !important;
 }

@@ -5,11 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
-
 </head>
 
 <body>
@@ -585,13 +584,17 @@
                         Asia-Pacific has historically been a strong manufacturing hub, and is also now blossoming into a
                         thriving marketplace for both global and local brands.
                     </p>
+
                     <p class="w-100">
                         Learn how you can power your growth ambitions in sporting goods markets in Asia-Pacific and
                         beyond.
                     </p>
-                    <button class="btn btn-outline-secondary">Access to our e-book</button>
+
+                    <div class="col-lg-4 col-md-8 col-sm-12">
+                        <button class="btn btn-outline-secondary w-100">Access to our e-book</button>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-6  col-sm-12 px-5">
+                <div class="col-lg-6 col-md-6  col-sm-12 g-4">
                     <img src="./assets/images/manufacturing-sneakers.webp" alt="" class="img-fluid w-100">
                 </div>
             </article>
@@ -611,7 +614,7 @@
             </div>
 
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" style="min-height:250px;">
                     <div class="row d-flex align-items-center">
                         <div class="col-2 p-4">
                             <img src="./assets/icons/apm-terminals_pos.svg" class="img-fluid" alt="">
@@ -640,8 +643,8 @@
                     </div>
                 </div>
 
-                <div class="carousel-item">
-                    <div class="row d-flex align-items-center">
+                <div class="carousel-item align-items-center" style="min-height:250px;">
+                    <div class="row d-flex align-items-center position-relative" style="top:40px">
                         <div class="col-2 p-4">
                             <img src="./assets/icons/maersk-container-industry.svg" class="img-fluid">
                         </div>
@@ -749,6 +752,7 @@
         </div>
     </footer>
 
+    <script src="./script.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
 </body>

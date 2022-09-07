@@ -4,23 +4,27 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <title>Transportation Services</title>
+
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Tolu Joel Android</title>
 </head>
 
 <body>
-    <section class="container">
-        <nav class="navbar navbar-expand-xl">
-            <div class="container-fluid">
+    <!-----------------------------------------------
+                    HEADER
+     ----------------------------------------------->
+
+    <header>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-xl bg-light w-100 p-4" id="navbar" style="z-index: 1000;">
+            <div class="container-md">
                 <a class="navbar-brand" href="#"><img src="./assets/icons/maeu.svg" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <p>hello</p>
                 </button>
 
                 <div class="collapse navbar-collapse">
@@ -52,27 +56,32 @@
                             <a class="nav-link dropdown-toggle" href="#" id="languages" data-bs-toggle="dropdown"
                                 aria-expanded="true">EN</a>
                             <!-- <ul class="dropdown-menu" aria-labelledby="languages">
-                                <li><a class="dropdown-item" href="#">New Booking</a></li>
-                                <li><a class="dropdown-item" href="#">Duplicate Booking</a></li>
-                            </ul> -->
+                                        <li><a class="dropdown-item" href="#">New Booking</a></li>
+                                        <li><a class="dropdown-item" href="#">Duplicate Booking</a></li>
+                                    </ul> -->
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <nav>
+        <nav class="container">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                 <li class="breadcrumb-item"><a href="./stack.html"></a></li>
             </ol>
         </nav>
-    </section>
+    </header>
+
+
+    <!-----------------------------------------------
+                    TRANSPORTATION SERVICES
+     ----------------------------------------------->
 
     <section class="container">
         <div class="section-top py-5">
             <!-- px-4  w-75 -->
-            <h2 class="h1 heading mb-3 font-weight-light">Transportation Services</h2>
+            <h2 class="h1 mb-3 font-weight-light">Transportation Services</h2>
             <p class="w-75">
                 Regardless of your industry, your commodity, or your key markets, Maersk has solutions that offer
                 both small and large businesses the opportunity to grow. We serve our customers with frequent
@@ -86,7 +95,7 @@
                 <div class="card h-100 hover-overlay border-0">
                     <img src="./assets/images/ocean-transport_720x405.jpeg" alt="" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title heading"></h5>
+                        <h5 class="card-title"></h5>
                         <p class="card-text">
                             As the world's largest container shipping company, we move 12 million containers every
                             year and deliver to every corner of the globe.
@@ -100,7 +109,7 @@
                     <img src="./assets/images/landside-transportation-thumbnail_720x405.jpeg" alt=""
                         class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title heading">Inland Services</h5>
+                        <h5 class="card-title">Inland Services</h5>
                         <p class="card-text">
                             By truck, rail or barge, we take your goods from farm to store doors.
                         </p>
@@ -112,7 +121,7 @@
                 <div class="card h-100">
                     <img src="./assets/images/intercontinental-rail_720x405_v1.jpeg" alt="" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title heading">Intercontinental rail</h5>
+                        <h5 class="card-title">Intercontinental rail</h5>
                         <p class="card-text">
                             Get tailored rail solutions and connections with major rail operators to make sure your
                             goods arrive on time, every time.
@@ -126,7 +135,7 @@
                 <div class="card h-100">
                     <img src="./assets/images/air-freight-services_720x405_v3.webp" alt="" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title heading">Air Freight</h5>
+                        <h5 class="card-title">Air Freight</h5>
                         <p class="card-text">
                             Reduce the cost of transporting your urgent or time critical cargo with our Global Air
                             Freight solutions. Learn more about Maersk Air.
@@ -135,11 +144,15 @@
                 </div>
             </div>
         </div>
-
     </section>
 
+
+    <!-----------------------------------------------
+                    STAND-ALONE ARTICLES
+     ----------------------------------------------->
+
     <section class="container">
-        <div class="row transportation-feature">
+        <article class="row align-items-center my-4">
             <div class="col">
                 <h2>Less than Container Load (LCL)</h2>
                 <p>Our LCL services range from the co-ordination of single LCL shipments all the way to multi-country
@@ -150,9 +163,9 @@
             <div class="col">
                 <img src="./assets/images/lcl_720x405_v2.jpeg" alt="" class="img-fluid">
             </div>
-        </div>
+        </article>
 
-        <div class="row transportation-feature">
+        <article class="row align-items-center my-4">
             <div class="col">
                 <h2>Maersk ECO Delivery</h2>
                 <p>Our newest innovation is Maersk ECO Delivery - a more sustainable way to transport your goods. Maersk
@@ -164,9 +177,9 @@
             <div class="col">
                 <img src="./assets/images/eco-delivery_720x405.jpeg" alt="" class="img-fluid">
             </div>
-        </div>
+        </article>
 
-        <div class="row transportation-feature">
+        <article class="row align-items-center my-4">
             <div class="col">
                 <h2>International Development</h2>
                 <p>Time is crucial when relief work is involved, which is why we work with international aid
@@ -177,91 +190,134 @@
             <div class="col">
                 <img src="./assets/images/international-development_720x405_v2.jpeg" alt="" class="img-fluid">
             </div>
-        </div>
+        </article>
     </section>
+
+
+    <!-----------------------------------------------
+                    INDUSTRY SECTORS
+     ----------------------------------------------->
 
     <section class="container">
-        <h1 class="heading">Industry sectors</h1>
-        <div class="row mb-4 row-cols-4">
-            <div class="col">
-                <div class="card h-100 hover-overlay border-0">
-                    <img src="./assets/icons/pictogram-fmcg.svg" style="width: 175px; height: 175px"
-                        class="card-img-top mx-auto img-fluid">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">FCMG</h5>
+        <h1>Industry sectors</h1>
+
+        <!-- carousel -->
+        <div id="industry_sectors-carousel" class="carousel slide p-5" data-bs-ride="true">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#industry_sectors-carousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1">
+                </button>
+
+                <button type="button" data-bs-target="#industry_sectors-carousel" data-bs-slide-to="1"
+                    aria-label="Slide 2">
+                </button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row mb-4 row-cols-4">
+                        <div class="col">
+                            <div class="card h-100 hover-overlay border-0">
+                                <img src="./assets/icons/pictogram-fmcg.svg" style="width: 175px; height: 175px"
+                                    class="card-img-top mx-auto img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">FCMG</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 hover-overlay border-0">
+                                <img src="./assets/icons/pictogram-apparel.svg" style="width: 175px; height: 175px"
+                                    class="card-img-top mx-auto img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Lifestyle</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 hover-overlay border-0">
+                                <img src="./assets/icons/pictogram-retail.svg" style="width: 175px; height: 175px"
+                                    class="card-img-top mx-auto img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Retail</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 hover-overlay border-0">
+                                <img src="./assets/icons/pictogram-chemicals.svg" style="width: 175px; height: 175px"
+                                    class="card-img-top mx-auto img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Chemicals</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row mb-4 row-cols-4">
+                        <div class="col">
+                            <div class="card h-100 hover-overlay border-0">
+                                <img src="./assets/icons/pictogram-automobile.svg" style="width: 175px; height: 175px"
+                                    class="card-img-top mx-auto img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Automotive</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 hover-overlay border-0">
+                                <img src="./assets/icons/pictogram-electronics.svg" style="width: 175px; height: 175px"
+                                    class="card-img-top mx-auto img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Electronics</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 hover-overlay border-0">
+                                <img src="./assets/icons/pictogram-oversized-cargo.svg"
+                                    style="width: 175px; height: 175px" class="card-img-top mx-auto img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Oversized cargo</h5>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card h-100 hover-overlay border-0">
-                    <img src="./assets/icons/pictogram-apparel.svg" style="width: 175px; height: 175px"
-                        class="card-img-top mx-auto img-fluid">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Lifestyle</h5>
-                    </div>
-                </div>
-            </div>
+            <button class="d-lg-block d-md-none carousel-control-prev" type="button"
+                data-bs-target="#industry_sectors-carousel" data-bs-slide="prev">
+                <i class="bi bi-arrow-left rounded-circle border border-dark text-dark fs-1 p-2"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
 
-            <div class="col">
-                <div class="card h-100 hover-overlay border-0">
-                    <img src="./assets/icons/pictogram-retail.svg" style="width: 175px; height: 175px"
-                        class="card-img-top mx-auto img-fluid">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Retail</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100 hover-overlay border-0">
-                    <img src="./assets/icons/pictogram-chemicals.svg" style="width: 175px; height: 175px"
-                        class="card-img-top mx-auto img-fluid">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Chemicals</h5>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row mb-4 row-cols-4">
-            <div class="col">
-                <div class="card h-100 hover-overlay border-0">
-                    <img src="./assets/icons/pictogram-automobile.svg" style="width: 175px; height: 175px"
-                        class="card-img-top mx-auto img-fluid">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Automotive</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100 hover-overlay border-0">
-                    <img src="./assets/icons/pictogram-electronics.svg" style="width: 175px; height: 175px"
-                        class="card-img-top mx-auto img-fluid">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Electronics</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100 hover-overlay border-0">
-                    <img src="./assets/icons/pictogram-oversized-cargo.svg" style="width: 175px; height: 175px"
-                        class="card-img-top mx-auto img-fluid">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Oversized cargo</h5>
-                    </div>
-                </div>
-            </div>
-
+            <button class="d-lg-block d-md-none carousel-control-next" type="button"
+                data-bs-target="#industry_sectors-carousel" data-bs-slide="next">
+                <i class="bi bi-arrow-right rounded-circle border border-dark text-dark fs-1 p-2"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
+
+
+    <!-----------------------------------------------
+                    STAND-ALONE ARTICLES
+     ----------------------------------------------->
 
     <section>
         <div class="container">
-            <div class="d-flex flex-row m-4">
+            <div class="d-flex align-items-center flex-row m-4">
                 <div>
                     <h2>Maersk Container Sales</h2>
                     <p>
@@ -270,7 +326,8 @@
                         environment and to making sure we have as small an impact on energy consumption as possible.
                         We hope you will join us in this quest and give the containers a new purpose and a second life.
                     </p>
-                    <p>We hope you will join us in this quest and give the containers a new purpose and a second life.</p>
+                    <p>We hope you will join us in this quest and give the containers a new purpose and a second life.
+                    </p>
                     <a href="" class="btn btn-primary">learn more</a>
                 </div>
                 <div>
@@ -278,7 +335,7 @@
                 </div>
             </div>
 
-            <div class="d-flex flex-row">
+            <div class="d-flex align-items-center flex-row">
                 <div>
                     <h2>Verified Gross Mass (VGM)</h2>
                     <p>Learn more about a regulation that requires shippers to provide the containers gross verified
@@ -292,5 +349,81 @@
             </div>
         </div>
     </section>
+
+
+    <!-----------------------------------------------
+                FOOTER
+    ----------------------------------------------->
+
+    <hr>
+    <footer class="py-5">
+        <div class="container-md">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <ul class="list-unstyled">
+                        <li class="my-2">About us</li>
+                        <li class="my-2">Careers</li>
+                        <li class="my-2">Insights</li>
+                        <li class="my-2">News and advisories</li>
+                        <li class="my-2">Maersk Growth</li>
+                        <li class="my-2">Sustainability</li>
+                        <li class="my-2">Whistleblower</li>
+                    </ul>
+                </div>
+                <hr class="d-block d-lg-none d-md-none">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <ul class="list-unstyled">
+                        <li class="my-2">Contact us</li>
+                        <li class="my-2">Investors</li>
+                        <li class="my-2">Press</li>
+                        <li class="my-2">Procurement</li>
+                        <li class="my-2">Support</li>
+                    </ul>
+                </div>
+                <hr class="d-block d-lg-none d-md-none">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <ul class="list-unstyled">
+                        <li class="my-2">Terms & conditions</li>
+                        <li class="my-2">Data Privacy Notification</li>
+                        <li class="my-2">Brand protection</li>
+                        <li class="my-2">Cookie policy</li>
+                        <li class="my-2">Cookie preferences</li>
+                    </ul>
+                </div>
+                <hr class="d-block d-lg-none d-md-none">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <ul class="list-unstyled">
+                        <li class="my-2">Point to point services</li>
+                        <li class="my-2">Supply chain and logistics</li>
+                        <li class="my-2">Transportaion Services</li>
+                        <li class="my-2">Vessel schedules</li>
+                        <li class="my-2">Container-md sales</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-end justify-content-between">
+                <div>
+                    <img src="./assets/icons/maeu.svg" alt="">
+                    <p class="mb-0">© A.P. Moller - Maersk</p>
+                </div>
+                <ul class="list-unstyled list-inline mb-0">
+                    <li class="list-inline-item">Linkedin</li>
+                    <li class="list-inline-item">Facebook</li>
+                    <li class="list-inline-item">Twitter</li>
+                    <li class="list-inline-item">Instagram</li>
+                    <li class="list-inline-item">YouTube</li>
+                </ul>
+
+                <div class="d-flex flex-column download-stores">
+                    <img src="./assets/icons/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+                        style="width: 117px;">
+                    <img src="./assets/icons/google-play-badge-english.svg" class="mt-2">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
 </body>

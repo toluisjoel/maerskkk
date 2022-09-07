@@ -15,8 +15,6 @@
     src: url(./assets/fonts/MaerskHeadline-Light.woff2);
 }
 
-/*  */
-
 #navbar {
     transition: 0.5s ease-in-out;
 }
@@ -46,10 +44,6 @@
     background-color: #00243d !important;
 }
 
-.carousel-indicators {
-    align-items: center;
-}
-
 /* hero section */
 
 .tracking-nav a {
@@ -60,8 +54,8 @@
     border-bottom: 1px solid black;
 }
 
-.carousel-control-prev,
 .bi-arrow-left,
+.carousel-control-prev,
 .carousel-control-next {
     opacity: 1 !important;
     margin: 0px 30px !important;

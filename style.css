@@ -12,7 +12,16 @@
 
 @font-face {
     font-family: "MaerskText";
-    src: url(./assets/fonts/MaerskHeadline-Light.woff2);
+    font-weight: normal;
+    src: url(./assets/fonts/MaerskText-Regular.woff2);
+}
+
+* {
+    font-family: "MaerskText";
+}
+
+.headline-font {
+    font-family: "MaerskHeadline";
 }
 
 #navbar {
@@ -45,6 +54,9 @@
 }
 
 /* hero section */
+.tracking {
+    margin:80px 0;
+}
 
 .tracking-nav a {
     transition: .3s ease-in-out;

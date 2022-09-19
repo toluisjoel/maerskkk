@@ -2,7 +2,6 @@
 When the user scrolls up, show the navbar */
 
 var prevScrollpos = window.pageYOffset;
-hero = document.getElementById("hero");
 
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;

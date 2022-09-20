@@ -66,9 +66,21 @@
     border-bottom: 1px solid black;
 }
 
-.bi-arrow-left,
+/* .bi-arrow-left,
 .carousel-control-prev,
 .carousel-control-next {
     opacity: 1 !important;
     margin: 0px 30px !important;
-}
+} */
+
+.latest-news .carousel-control-prev {
+    margin-left: -200px;
+  }
+  
+.latest-news .carousel-control-next {
+    margin-right: -200px;
+  }
+
+.latest-news .carousel-indicators {
+    margin-bottom: -30px;
+  }

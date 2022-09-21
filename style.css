@@ -26,6 +26,10 @@
     font-family: "MaerskHeadline";
 }
 
+header, nav {
+    max-width: 100% !important;
+}
+
 #navbar {
     transition: 0.5s ease-in-out;
 }
@@ -95,6 +99,9 @@
 /* latest insignts */
 
 @media only screen and (max-width: 1024px) {
+    .tracking {
+        margin-top: 250px;
+    }
     .latest-insight-largest-card {
         max-height: 290px !important;
     }

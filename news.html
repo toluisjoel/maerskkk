@@ -13,16 +13,22 @@
 <body>
 
     <!-----------------------------------------------
-                HEADER
-    ----------------------------------------------->
-    <header>
-        <nav class="navbar navbar-expand-xl">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./assets/icons/maeu.svg" alt="" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    HEADER
+     ----------------------------------------------->
+
+     <header>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-xl position-fixed bg-light w-100 p-2" id="navbar" style="z-index: 1000;">
+            <div class="container-md">
+                <a class="navbar-brand" href="#"><img src="./assets/icons/maeu.svg" alt=""></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <div class="d-flex flex-row">
+                        <span class="w-100"><img src="./assets/icons/search-icon.svg" style="height:20px"></span>
+                        <span class="w-100"><img src="./assets/icons/marker-icon.svg" style="height:20px"></span>
+                        <span class="navbar-toggler-icon"></span>
+                    </div>
                 </button>
 
                 <div class="collapse navbar-collapse">
@@ -35,9 +41,7 @@
                                 aria-expanded="true">Book</a>
                             <ul class="dropdown-menu" aria-labelledby="book">
                                 <li><a class="dropdown-item" href="#">New Booking</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Duplicate Booking</a>
-                                </li>
+                                <li><a class="dropdown-item" href="#">Duplicate Booking</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -56,9 +60,9 @@
                             <a class="nav-link dropdown-toggle" href="#" id="languages" data-bs-toggle="dropdown"
                                 aria-expanded="true">EN</a>
                             <!-- <ul class="dropdown-menu" aria-labelledby="languages">
-                                <li><a class="dropdown-item" href="#">New Booking</a></li>
-                                <li><a class="dropdown-item" href="#">Duplicate Booking</a></li>
-                            </ul> -->
+                                        <li><a class="dropdown-item" href="#">New Booking</a></li>
+                                        <li><a class="dropdown-item" href="#">Duplicate Booking</a></li>
+                                    </ul> -->
                         </li>
                     </ul>
                 </div>

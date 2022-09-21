@@ -20,6 +20,8 @@
     font-family: "MaerskText";
 }
 
+/* general  */
+
 .headline-font {
     font-family: "MaerskHeadline";
 }
@@ -27,6 +29,8 @@
 #navbar {
     transition: 0.5s ease-in-out;
 }
+
+/* cards  */
 
 .card {
     transition: all .2s ease-in-out;
@@ -42,6 +46,20 @@
     background-position: top;
 }
 
+/* carousels  */
+
+.latest-news .carousel-control-prev {
+    margin-left: -150px;
+}
+
+.latest-news .carousel-control-next {
+    margin-right: -150px;
+}
+
+.latest-news .carousel-indicators {
+    margin-bottom: -30px;
+}
+
 .carousel-indicators button {
     width: 10px !important;
     height: 10px !important;
@@ -53,9 +71,17 @@
     background-color: #00243d !important;
 }
 
+.bi-arrow-right,
+.bi-arrow-left {
+    display: flex;
+    align-items: center;
+    height: 60px !important;
+}
+
 /* hero section */
+
 .tracking {
-    margin:80px 0;
+    margin: 80px 0;
 }
 
 .tracking-nav a {
@@ -66,21 +92,24 @@
     border-bottom: 1px solid black;
 }
 
-/* .bi-arrow-left,
-.carousel-control-prev,
-.carousel-control-next {
-    opacity: 1 !important;
-    margin: 0px 30px !important;
-} */
+/* latest insignts */
 
-.latest-news .carousel-control-prev {
-    margin-left: -200px;
-  }
-  
-.latest-news .carousel-control-next {
-    margin-right: -200px;
-  }
+@media only screen and (max-width: 1024px) {
+    .latest-insight-largest-card {
+        max-height: 290px !important;
+    }
 
-.latest-news .carousel-indicators {
-    margin-bottom: -30px;
-  }
+    .latest-news .carousel-control-prev {
+        display: none !important;
+        margin: 0 !important;
+    }
+
+    .latest-news .carousel-control-next {
+        display: none !important;
+        margin: 0 !important;
+    }
+
+    .parteners-carousel .carousel-item {
+        min-height: auto !important;
+    }
+}

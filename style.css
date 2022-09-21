@@ -52,16 +52,18 @@ header, nav {
 
 /* carousels  */
 
-.latest-news .carousel-control-prev {
+.latest-news .carousel-control-prev
+/* .industry-sectors .carousel-control-prev */ { 
     margin-left: -150px;
 }
 
-.latest-news .carousel-control-next {
-    margin-right: -150px;
+.latest-news .carousel-control-next
+/* .industry-sectors .carousel-control-next */ {
+    margin-right: -150px !important;
 }
 
 .latest-news .carousel-indicators {
-    margin-bottom: -30px;
+    margin-bottom: -30px !important;
 }
 
 .carousel-indicators button {

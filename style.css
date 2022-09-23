@@ -91,7 +91,12 @@
 /* latest insignts */
 @media only screen and (max-width: 1024px) {
     .tracking {
-        margin-top: 200px;
+        margin-top: 300px !important;
+        /* dis */
+    }
+
+    .article-below-hero {
+        margin-top: 150px !important;
     }
 
     .latest-insight-largest-card {

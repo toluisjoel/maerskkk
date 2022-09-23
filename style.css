@@ -88,11 +88,10 @@
     border-bottom: 1px solid black;
 }
 
-/* latest insignts */
+/* responsiveness */
 @media only screen and (max-width: 1024px) {
     .tracking {
         margin-top: 300px !important;
-        /* dis */
     }
 
     .article-below-hero {
@@ -103,12 +102,12 @@
         max-height: 290px !important;
     }
 
-    .latest-news .carousel-control-prev {
+    .carousel-control-prev {
         display: none !important;
         margin: 0 !important;
     }
 
-    .latest-news .carousel-control-next {
+    .carousel-control-next {
         display: none !important;
         margin: 0 !important;
     }
